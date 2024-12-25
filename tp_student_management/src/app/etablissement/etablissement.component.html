@@ -1,0 +1,14 @@
+<div>
+  <h2>Ajouter Établissement</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="id">ID Établissement</label>
+    <input type="number" id="id" [(ngModel)]="etablissement.id" name="id" placeholder="ID Établissement" required>
+
+    <label for="nom">Nom Établissement</label>
+    <input type="text" id="nom" [(ngModel)]="etablissement.nom" name="nom" placeholder="Nom Établissement" required>
+
+    <button routerLink="/liste-etablissement" type="submit">Ajouter Établissement</button>
+  </form>
+
+  <div *ngIf="message">{{ message }}</div>
+</div>

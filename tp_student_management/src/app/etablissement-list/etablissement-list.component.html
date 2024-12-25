@@ -1,0 +1,21 @@
+<div>
+  <h3>Liste des Établissements</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ etablissements.id }}</td>
+        <td>{{ etablissements.nom }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="etablissements.length === 0">
+    <p>Aucun établissement n'a été ajouté.</p>
+  </div>
+</div>

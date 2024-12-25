@@ -1,0 +1,59 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+app-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+app-home {
+  flex-grow: 1;
+}
+
+.button-afficher-carte {
+  background-color: #3498db; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprimer la bordure */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 16px; /* Taille du texte */
+  cursor: pointer; /* Style du curseur */
+  border-radius: 5px; /* Arrondir les coins */
+  transition: background-color 0.3s ease; /* Effet de transition */
+}
+
+.button-afficher-carte:hover {
+  background-color: #2385c3; /* Couleur de fond au survol */
+}
+
+.button-afficher-carte:focus {
+  outline: none; /* Supprimer le contour */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre au focus */
+}

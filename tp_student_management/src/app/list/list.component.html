@@ -1,0 +1,26 @@
+<div>
+  <h3>Liste des Étudiants</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Établissement</th>
+        <th>Matricule</th>
+        <th>Email</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let etud of etudiants">
+        <td>{{ etud.nom }}</td>
+        <td>{{ etud.prenom }}</td>
+        <td>{{ etud.etablissement }}</td> <!-- Affiche l'établissement associé -->
+        <td>{{ etud.matricule }}</td>
+        <td>{{ etud.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>

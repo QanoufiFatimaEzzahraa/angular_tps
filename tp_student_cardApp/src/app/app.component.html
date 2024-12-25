@@ -1,0 +1,17 @@
+<div *ngIf="!formSubmitted">
+  <app-form (formData)="receiveData($event)"></app-form>
+</div>
+
+<div *ngIf="formSubmitted" class="card">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <app-photo [photoUrl]="photoUrl"></app-photo>
+  <app-home
+    [firstName]="firstName"
+    [lastName]="lastName"
+    [establishment]="establishment"
+    [studentNumber]="studentNumber">
+  </app-home>
+  </div>
+
+</div>

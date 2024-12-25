@@ -1,0 +1,24 @@
+<div *ngIf="!formSubmitted">
+
+  <app-form
+    [(formData)]="newStudent"
+    (submit)="addStudent()"
+  ></app-form>
+
+  <button class="button-afficher-carte" *ngIf="students.length > 0" (click)="showStudentCards()">Afficher les cartes d'étudiants</button>
+</div>
+
+<div *ngIf="formSubmitted" class="cards-container">
+  <div class="card" *ngFor="let student of students">
+    <app-navbar></app-navbar>
+    <div class="card-content">
+      <app-photo [photoUrl]="student.photoUrl"></app-photo>
+      <app-home
+        [firstName]="student.firstName"
+        [lastName]="student.lastName"
+        [establishment]="student.establishment"
+        [studentNumber]="student.studentNumber">
+      </app-home>
+    </div>
+  </div>
+</div>

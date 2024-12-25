@@ -1,0 +1,21 @@
+<div class="form-container">
+  <h3>Student Informations</h3>
+  <form (ngSubmit)="submitForm()">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" [(ngModel)]="firstName" name="firstName">
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" [(ngModel)]="lastName" name="lastName">
+
+    <label for="establishment">Establishment:</label>
+    <input type="text" id="establishment" [(ngModel)]="establishment" name="establishment">
+
+    <label for="studentNumber">Student Number:</label>
+    <input type="text" id="studentNumber" [(ngModel)]="studentNumber" name="studentNumber">
+
+    <label for="photo">Upload Photo:</label>
+    <input type="file" (change)="onFileSelected($event)" accept="image/*">
+
+    <button type="submit">Generate Card</button>
+  </form>
+</div>

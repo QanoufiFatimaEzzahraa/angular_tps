@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()">
+  <input [(ngModel)]="formData.firstName" placeholder="Prénom" name="firstName" required>
+  <input [(ngModel)]="formData.lastName" placeholder="Nom" name="lastName" required>
+  <input [(ngModel)]="formData.establishment" placeholder="Établissement" name="establishment" required>
+  <input [(ngModel)]="formData.studentNumber" placeholder="Numéro d'étudiant" name="studentNumber" required>
+  <input type="file" (change)="onPhotoSelected($event)" required>
+  <button type="submit">Ajouter l'étudiant</button>
+</form>

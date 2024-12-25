@@ -1,0 +1,41 @@
+/* Style général pour le conteneur */
+div {
+  max-width: 600px; /* Largeur maximale du conteneur */
+  margin: 20px auto; /* Centrer le conteneur horizontalement */
+  padding: 20px; /* Espacement interne */
+  border: 1px solid #ccc; /* Bordure grise */
+  border-radius: 8px; /* Coins arrondis */
+  background-color: #f9f9f9; /* Couleur de fond légère */
+}
+
+/* Style pour les titres */
+h2 {
+  text-align: center; /* Centrer le texte */
+}
+
+/* Style pour les labels */
+label {
+  display: block; /* Affichage en bloc pour chaque label */
+  margin-bottom: 5px; /* Espacement en bas des labels */
+}
+
+/* Style pour les champs de sélection */
+select {
+  width: calc(100% - 22px); /* Largeur pleine moins les marges internes */
+  padding: 10px; /* Espacement interne des champs */
+  margin-bottom: 15px; /* Espacement en bas des champs */
+}
+
+/* Style pour le bouton de soumission */
+button {
+  width: 100%; /* Largeur pleine du bouton */
+  padding: 10px; /* Espacement interne du bouton */
+  background-color: green; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte en blanc */
+  border: none; /* Pas de bordure par défaut */
+  border-radius: 4px; /* Coins arrondis pour le bouton */
+}
+
+button:hover {
+  background-color: green; /* Couleur plus foncée au survol */
+}

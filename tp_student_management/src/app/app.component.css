@@ -1,0 +1,37 @@
+/* Container des boutons */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+/* Style de chaque bouton */
+.btns button {
+  background-color: #4CAF50; /* Couleur de fond verte */
+  color: white; /* Texte en blanc */
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px; /* Coins arrondis */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Effet de transition */
+}
+
+/* Effet au survol */
+.btns button:hover {
+  background-color: #45a049; /* Couleur de fond au survol */
+  transform: scale(1.05); /* Agrandir légèrement le bouton */
+}
+
+/* Effet actif (lorsque le bouton est cliqué) */
+.btns button:active {
+  background-color: #388e3c; /* Couleur plus sombre au clic */
+  transform: scale(1); /* Réduit l'agrandissement du survol */
+}
+
+/* Style de la classe "active" (ajouté par routerLinkActive) */
+.btns button.router-link-active {
+  background-color: #2e7d32; /* Couleur différente pour le bouton actif */
+}
+

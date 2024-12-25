@@ -1,0 +1,54 @@
+/* Style général pour le conteneur du formulaire */
+div {
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 20px auto; /* Centrer le formulaire horizontalement */
+  padding: 20px; /* Espacement interne */
+  border: 1px solid #ccc; /* Bordure grise */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  background-color: #f9f9f9; /* Couleur de fond légère */
+}
+
+/* Style pour les titres */
+h2 {
+  text-align: center; /* Centrer le texte */
+  color: #333; /* Couleur du texte */
+}
+
+/* Style pour les labels */
+label {
+  display: block; /* Affichage en bloc pour chaque label */
+  margin-bottom: 5px; /* Espacement en bas des labels */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour les champs de saisie */
+input[type="number"],
+input[type="text"] {
+  width: calc(100% - 22px); /* Largeur pleine moins les marges internes */
+  padding: 10px; /* Espacement interne des champs */
+  margin-bottom: 15px; /* Espacement en bas des champs */
+  border: 1px solid #ccc; /* Bordure grise pour les champs */
+  border-radius: 4px; /* Coins arrondis pour les champs */
+}
+
+/* Style pour le bouton de soumission */
+button {
+  width: 100%; /* Largeur pleine du bouton */
+  padding: 10px; /* Espacement interne du bouton */
+  background-color: green; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte en blanc */
+  border: none; /* Pas de bordure par défaut */
+  border-radius: 4px; /* Coins arrondis pour le bouton */
+  cursor: pointer; /* Curseur en main au survol */
+}
+
+button:hover {
+  background-color: green; /* Couleur plus foncée au survol */
+}
+
+/* Style pour le message de confirmation */
+.message {
+  margin-top: 15px; /* Espacement en haut du message */
+  color: green; /* Couleur verte pour le message de succès */
+}

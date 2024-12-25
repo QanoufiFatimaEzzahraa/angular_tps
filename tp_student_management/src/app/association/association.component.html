@@ -1,0 +1,19 @@
+
+
+<div>
+  <h2>Associer Étudiant à Établissement</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="etudiant">Sélectionner Étudiant</label>
+    <select id="etudiant" [(ngModel)]="selectedEtudiantId" name="etudiant" required>
+      <option *ngFor="let etud of etudiants" [value]="etud.id">{{ etud.nom }} {{ etud.prenom }}</option>
+    </select>
+
+    <label for="etablissement">Sélectionner Établissement</label>
+    <select id="etablissement" [(ngModel)]="selectedEtablissementId" name="etablissement" required>
+      <option *ngFor="let etab of etablissements" [value]="etab.id">{{ etab.nom }}</option>
+    </select>
+
+    <button type="submit">Associer</button>
+  </form>
+</div>
+
